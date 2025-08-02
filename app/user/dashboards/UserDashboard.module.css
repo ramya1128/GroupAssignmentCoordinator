@@ -1,0 +1,397 @@
+.container {
+  font-family: "Segoe UI", sans-serif;
+  background: #f8fafc;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* Header */
+.header {
+  background: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.profile {
+  font-weight: 600;
+  cursor: pointer;
+  color: #1e40af;
+  transition: color 0.2s ease;
+}
+
+.profile:hover {
+  color: #2563eb;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 40px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  flex: 1 1 220px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.card h3 {
+  margin-top: 8px;
+  font-size: 28px;
+  color: #1e40af;
+}
+
+/* Tab Bar */
+.tabbar {
+  display: flex;
+  justify-content: center;
+  margin: 10px 40px 0;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tabbar button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 30px;
+  color: #475569;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabbar .active {
+  color: #1e40af;
+  border-bottom: 3px solid #1e40af;
+}
+
+/* Assignment & Group Cards */
+.groupList {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.groupCard {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.groupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563eb;
+  background-color: #e0edff;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+/* Submission Form */
+.submissionForm {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submissionForm textarea {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #f8fafc;
+  resize: vertical;
+  color: black;
+}
+
+.submissionForm button {
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1e40af;
+  color: white;
+  width: fit-content;
+  transition: background 0.2s ease;
+}
+
+.submissionForm button:hover {
+  background: #1d4ed8;
+}
+
+.submissionForm .cancelBtn {
+  background: #f3f4f6;
+  color: #1e293b;
+}
+
+.submissionForm .cancelBtn:hover {
+  background: #e5e7eb;
+}
+
+.cancelBtn {
+  background: #f3f4f6;
+  color: #1e293b;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancelBtn:hover {
+  background: #e5e7eb;
+}
+
+.submitButton {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: #1d4ed8; 
+}
+
+/* Group Members */
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.memberBox {
+  background: #f9fafb;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.email {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* Progress Bar */
+.progressBarContainer {
+  margin-top: 20px;
+}
+
+.progressBar {
+  width: 100%;
+  background: #e5e7eb;
+  height: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.progress {
+  background: #1e40af;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Modal (Profile Edit) */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.modalBox {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modalBox h3 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.modalBox label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 10px;
+  display: block;
+}
+
+.modalBox input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.modalBox button {
+  background: #1e40af;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modalBox button:hover {
+  background: #1d4ed8;
+}
+
+.cancelBtn {
+  background: #f3f4f6 !important;
+  color: #1e293b !important;
+}
+
+/* Extras */
+.submitSection textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  min-height: 100px;
+  font-size: 14px;
+}
+
+.submitSection button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submitSection button:hover {
+  background: #1d4ed8;
+}
+
+.readOnlyInput {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  border-radius: 6px;
+  color: #475569;
+}
+
+.submittedBox {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submittedBox p {
+  margin: 0;
+  color: #334155;
+  font-size: 14px;
+}
+
+.submittedBox strong {
+  color: #1e3a8a;
+}
+
+/* Card Actions: Edit/Delete Buttons aligned right */
+.cardActions {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.cardActions button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: background 0.2s ease;
+  border-radius: 4px;
+}
+
+.cardActions button:hover {
+  background: #e2e8f0;
+}

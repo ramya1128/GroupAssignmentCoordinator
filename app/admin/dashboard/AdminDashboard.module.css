@@ -1,0 +1,271 @@
+.container {
+  font-family: "Segoe UI", sans-serif;
+  background: #f8fafc;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.header {
+  background: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.actions button {
+  background: #1e40af;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.actions button:hover {
+  background: #1d4ed8;
+}
+
+.actions .profile {
+  font-weight: 600;
+  cursor: pointer;
+  color: #1e40af;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 220px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.card h3 {
+  font-size: 28px;
+  margin-top: 8px;
+  color: #1e40af;
+}
+
+.tabbar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #e2e8f0;
+  margin: 20px 40px 0;
+}
+
+.tabbar button {
+  padding: 14px 30px;
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tabbar .active {
+  color: #1e40af;
+  border-color: #1e40af;
+}
+
+.groupList {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.groupCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.groupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 34px;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2563eb;
+  background-color: #e0edff;
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.members span {
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 14px;
+}
+
+.cardActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cardActions button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cardActions button:hover {
+  background: #1e3a8a;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modalBox {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modalBox h3 {
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  font-size: 20px;
+}
+
+.modalBox input,
+.modalBox textarea,
+.modalBox select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.modalBox button {
+  background: #1e40af;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.modalBox button:hover {
+  background: #1d4ed8;
+}
+
+.cancelBtn {
+  background: #f3f4f6 !important;
+  color: #1e293b !important;
+  margin-top: 10px;
+}
+
+.statusWithActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #475569;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+.iconBtn:hover {
+  color: #1e40af;
+}
+
+.progressBarWrapper {
+  background-color: #e5e7eb;
+  height: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #1e40af;
+  border-radius: 8px;
+  transition: width 0.3s ease-in-out;
+}
