@@ -1,0 +1,13 @@
+https://group-assignment-coordinator.vercel.app/
+
+1.Admin Login
+->username:"admin"
+->password:"admin123"
+
+while create the group give email for the member (example:  ramya@gmail.com,anu@gmail.com,ben@gmail.com) this email should be used for the user to register and login
+
+2.User Login
+first register with username,email,and password
+Login (example)
+->username or email:"ramya" || "ramya@gmail.com"
+->password:"ramya321"
