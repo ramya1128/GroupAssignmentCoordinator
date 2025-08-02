@@ -1,6 +1,7 @@
 import { connectDB } from '@/lib/db';
 import User from '@/models/User';
 import { comparePasswords, generateToken } from '@/lib/auth';
+//import { NextResponse } from 'next/server'; 
 
 export async function POST(req) {
   try {
