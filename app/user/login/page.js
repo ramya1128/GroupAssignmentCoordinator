@@ -81,7 +81,7 @@ export default function LoginPage() {
             <button type="submit" className={styles.submit}>Sign In</button>
           </form>
           <p className={styles['register-link']}>
-            Don't have an account?{' '}
+            Don&apos;t have an account?{' '}
             <span onClick={() => router.push('/user/register')}>Register here</span>
           </p>
         </div>
